@@ -1,0 +1,15 @@
+*{
+    font-family: 'Silkscreen';font-size: 22px;
+}
+.card{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    margin-bottom: 20px;
+}
+.cardContenido{
+    font-size: 20vh;
+}

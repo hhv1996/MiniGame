@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MiniGame</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Silkscreen"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link href="./style/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="./style/popupEstipo.css" rel="stylesheet" type="text/css" />
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MiniGame</a>
+      </div>
+    </nav>
+  </header>
+  <body style="background-color: #212529" onkeydown="validarTeclado(event);">
+    <div class="container">
+      <div class="tarjetas">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card" onclick="validarCLick('A')">
+              <div class="cardContenido">A</div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card" onclick="validarCLick('S')">
+              <div class="cardContenido">S</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card" onclick="validarCLick('D')">
+              <div class="cardContenido">D</div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card" onclick="validarCLick('F')">
+              <div class="cardContenido">F</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>GameOver</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <div class="card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/logic.js"></script>
+    <footer>
+      <p>Vargas Hugo &copy; 2022</p>
+    </footer>
+  </body>
+</html>
